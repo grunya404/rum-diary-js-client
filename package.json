@@ -1,0 +1,32 @@
+{
+  "name": "rum-diary-js-client",
+  "version": "0.0.0",
+  "description": "rum-diary javascript client - Capture RUM: timers, events, navigation timing, resource timing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shane-tomlinson/rum-diary-js-client.git"
+  },
+  "keywords": [
+    "rum",
+    "rum-diary",
+    "statistics",
+    "metrics",
+    "collector",
+    "performance",
+    "navigationTiming",
+    "resourceTiming",
+    "timing",
+    "events"
+  ],
+  "author": "Shane Tomlinson <shane@shanetomlinson.com>",
+  "license": "MPL2.0",
+  "bugs": {
+    "url": "https://github.com/shane-tomlinson/rum-diary-js-client/issues"
+  },
+  "homepage": "https://github.com/shane-tomlinson/rum-diary-js-client",
+}
