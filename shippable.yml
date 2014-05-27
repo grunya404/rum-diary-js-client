@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - 0.10.25
+
+notifications:
+  email:
+    recipients:
+      - shane@shanetomlinson.com
+    on_success: change
+    on_failure: always
+
+script: npm test

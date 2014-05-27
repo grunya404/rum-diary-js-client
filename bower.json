@@ -1,0 +1,40 @@
+{
+  "name": "rum-diary-js-client",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shane-tomlinson/rum-diary-js-client",
+  "authors": [
+    "Shane Tomlinson <shane@shanetomlinson.com>"
+  ],
+  "description": "rum-diary javascript client - Capture RUM: timers, events, navigation timing, resource timing.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "rum",
+    "rum-dairy",
+    "statistics",
+    "metrics",
+    "collector",
+    "performance",
+    "navigationTiming",
+    "resourceTiming",
+    "timing",
+    "events"
+  ],
+  "license": "MPL2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "1.9.1",
+    "micrajax": "0.0.3",
+    "mocha": "1.19.0",
+    "speed-trap": "0.0.2"
+  }
+}
