@@ -19,19 +19,19 @@ module.exports = function (grunt) {
   grunt.config('watch', {
     scripts: {
       files: [ 'src/*.js', 'tests/mocks/*.js', 'tests/lib/*.js', 'tests/spec/*.js' ],
-      tasks: [ 'browserify' ]
+      tasks: [ 'browserify', 'mocha' ]
     }
   });
 
   grunt.config('browserify', {
     dist: {
       files: {
-        'dist/rum-diary-js-client.js': ['src/rum-diary-js-client.js']
+        'dist/rum-diary-js-client.js': ['src/start.js']
       }
     },
     test: {
       files: {
-        'tests/client_tests.js': ['tests/spec/rum-diary-js-client_test.js']
+        'tests/tests.js': ['tests/spec/all_tests.js']
       },
       options: {
         bundleOptions: {

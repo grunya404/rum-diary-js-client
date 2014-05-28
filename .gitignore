@@ -7,4 +7,4 @@ node_modules/
 
 # Generated stuff
 dist/
-tests/client_tests.js
+tests/tests.js

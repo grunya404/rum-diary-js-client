@@ -24,14 +24,14 @@ describe('rum-diary-js-client', function () {
     });
   });
 
-  describe('onLoad', function () {
+  describe('sendLoad', function () {
     it('sends data available on onload to the server', function (done) {
       ajaxMock.on('ajax', function (data) {
         assert.equal(data.url, '/metrics');
         done();
       });
 
-      client.onLoad();
+      client.sendLoad();
     });
   });
 
@@ -42,14 +42,14 @@ describe('rum-diary-js-client', function () {
     });
   });
 
-  describe('onUnload', function () {
+  describe('sendUnload', function () {
     it('sends events/timers to the server', function (done) {
       ajaxMock.on('ajax', function (data) {
         assert.equal(data.url, '/metrics');
         done();
       });
 
-      client.onUnload();
+      client.sendUnload();
     });
   });
 
