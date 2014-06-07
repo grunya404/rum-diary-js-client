@@ -62,13 +62,13 @@ describe('bootstrap', function () {
   });
 
   describe('getLoadurl', function () {
-    it('returns `/metrics` if `data-load_url` not specified', function () {
-      assert.equal(bootstrap.getLoadUrl(), '/metrics');
+    it('returns `https://rum-diary.org/metrics` if `data-load_url` not specified', function () {
+      assert.equal(bootstrap.getLoadUrl(), 'https://rum-diary.org/metrics');
     });
 
-    it('returns `/metrics` if `data-load_url` empty', function () {
+    it('returns `https://rum-diary.org/metrics` if `data-load_url` empty', function () {
       script.setAttribute('data-load_url', '');
-      assert.equal(bootstrap.getLoadUrl(), '/metrics');
+      assert.equal(bootstrap.getLoadUrl(), 'https://rum-diary.org/metrics');
     });
 
     it('returns value of `data-load_url` otherwise', function () {
@@ -78,13 +78,13 @@ describe('bootstrap', function () {
   });
 
   describe('getUnloadurl', function () {
-    it('returns `/metrics` if `data-unload_url` not specified', function () {
-      assert.equal(bootstrap.getUnloadUrl(), '/metrics');
+    it('returns `https://rum-diary.org/metrics` if `data-unload_url` not specified', function () {
+      assert.equal(bootstrap.getUnloadUrl(), 'https://rum-diary.org/metrics');
     });
 
-    it('returns `/metrics` if `data-unload_url` empty', function () {
+    it('returns `https://rum-diary.org/metrics` if `data-unload_url` empty', function () {
       script.setAttribute('data-unload_url', '');
-      assert.equal(bootstrap.getUnloadUrl(), '/metrics');
+      assert.equal(bootstrap.getUnloadUrl(), 'https://rum-diary.org/metrics');
     });
 
     it('returns value of `data-unload_url` otherwise', function () {

@@ -4,7 +4,7 @@
   "description": "rum-diary javascript client - Capture RUM: timers, events, navigation timing, resource timing.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt mocha",
+    "test": "grunt browserify && grunt mocha",
     "postinstall": "bower install && grunt browserify"
   },
   "author": "Shane Tomlinson <shane@shanetomlinson.com>",

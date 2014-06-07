@@ -37,14 +37,14 @@ Bootstrap.prototype = {
   getLoadUrl: function () {
     var attrValue = getAttribute(this.script, 'data-load_url');
 
-    if (! attrValue) return '/metrics';
+    if (! attrValue) return 'https://rum-diary.org/metrics';
     return attrValue;
   },
 
   getUnloadUrl: function () {
     var attrValue = getAttribute(this.script, 'data-unload_url');
 
-    if (! attrValue) return '/metrics';
+    if (! attrValue) return 'https://rum-diary.org/metrics';
     return attrValue;
   }
 };
