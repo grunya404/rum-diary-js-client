@@ -573,6 +573,7 @@ RumDiaryJSClient.prototype = {
 };
 
 function onLoad () {
+  /*jshint validthis: true*/
   var self = this;
   // use a set timeout to not interfere with loading and allow
   // navigationTiming metrics to become available.
@@ -582,10 +583,12 @@ function onLoad () {
 }
 
 function onUnload () {
+  /*jshint validthis: true*/
   this.sendUnload();
 }
 
 function sendData (data, url, sync) {
+  /*jshint validthis: true*/
   var self = this;
   /*
   if (navigator.sendBeacon) {

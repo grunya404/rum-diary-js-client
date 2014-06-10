@@ -1,0 +1,16 @@
+{
+  "browser": true,
+  "eqeqeq": true,
+  "globalstrict": true,
+  "indent": 2,
+  "maxerr": 100,
+  "passfail": false,
+  "predef": [
+    "define",
+    "require",
+    "module"
+  ],
+  "quotmark": "single",
+  "white": false,
+  "unused": "strict"
+}
