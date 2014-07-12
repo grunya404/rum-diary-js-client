@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jshint src && grunt browserify && grunt mocha",
-    "postinstall": "bower install && grunt browserify"
+    "postinstall": "bower install && grunt default"
   },
   "author": "Shane Tomlinson <shane@shanetomlinson.com>",
   "repository": {
@@ -30,12 +30,14 @@
   },
   "homepage": "https://github.com/shane-tomlinson/rum-diary-js-client",
   "devDependencies": {
-    "bower": "1.3.3",
-    "browserify": "4.1.5",
+    "bower": "1.3.8",
+    "browserify": "4.2.0",
     "grunt": "0.4.5",
-    "grunt-browserify": "2.1.0",
+    "grunt-browserify": "2.1.3",
+    "grunt-contrib-uglify": "0.5.0",
     "grunt-contrib-watch": "0.6.1",
-    "grunt-mocha": "0.4.10",
-    "jshint": "2.5.1"
+    "grunt-mocha": "0.4.11",
+    "jshint": "2.5.2",
+    "grunt-contrib-clean": "0.5.0"
   }
 }

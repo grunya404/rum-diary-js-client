@@ -15,6 +15,11 @@ The easiest way to install rum-diary-js-client is through bower.
 <script src="bower_components/rum-diary-js-client/dist/rum-diary-js-client.js" defer async></script>
 ```
 
+Minified resources can also be used:
+```html
+<script src="bower_components/rum-diary-js-client/dist/rum-diary-js-client.min.js" defer async></script>
+```
+
 ### Clone the git repo
 If bower isn't your thing, it is easy to do things the old fashioned way.
 
@@ -42,13 +47,13 @@ URL where to send "load" data. "Load" data is data that is available at the time
 of `window.onload`. This includes navigationTiming data, referrer, and whether
 the user is a returning user.
 
-Defaults to `/metrics`
+Defaults to `https://rum-diary.org/metrics`
 
 * `data-unload_url`
 URL where to send "unload" data. "Unload" data is data that is available at the time
 of `window.onunload`. This includes events, timers, and page view duration.
 
-Defaults to `/metrics`
+Defaults to `https://rum-diary.org/metrics`
 
 ## Advanced use
 
