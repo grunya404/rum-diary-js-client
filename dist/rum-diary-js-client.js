@@ -679,4 +679,4 @@ function bindDOMEvent(element, handler, callback) {
 
 module.exports = WindowEvents;
 
-},{}]},{},[5])
+},{}]},{},[5]);

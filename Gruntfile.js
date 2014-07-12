@@ -6,6 +6,8 @@ module.exports = function (grunt) {
   'use strict';
 
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-mocha');
 
@@ -40,4 +42,18 @@ module.exports = function (grunt) {
       }
     }
   });
+
+  grunt.config('uglify', {
+    dist: {
+      files: {
+        'dist/rum-diary-js-client.min.js': ['dist/rum-diary-js-client.js']
+      }
+    }
+  });
+
+  grunt.config('clean', {
+    dist: ['dist']
+  });
+
+  grunt.registerTask('default', ['clean', 'browserify', 'uglify']);
 };
