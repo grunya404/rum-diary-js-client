@@ -1,6 +1,6 @@
 {
   "name": "rum-diary-js-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "rum-diary javascript client - Capture RUM: timers, events, navigation timing, resource timing.",
   "main": "index.js",
   "scripts": {
