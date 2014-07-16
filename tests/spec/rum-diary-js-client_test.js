@@ -21,6 +21,8 @@ describe('rum-diary-js-client', function () {
     it('returns data available on onload', function () {
       var data = client.getLoad();
       assert.ok(data);
+      assert.equal(data.screen.width, window.screen.width);
+      assert.equal(data.screen.height, window.screen.height);
     });
   });
 
