@@ -35,6 +35,6 @@
     "chai": "1.9.1",
     "micrajax": "0.0.3",
     "mocha": "1.19.0",
-    "speed-trap": "0.0.2"
+    "speed-trap": "0.0.5"
   }
 }
