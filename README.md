@@ -49,7 +49,7 @@ the user is a returning user.
 
 Defaults to `https://rum-diary.org/metrics`
 
-* `data-unload_url`
+### `data-unload_url`
 URL where to send "unload" data. "Unload" data is data that is available at the time
 of `window.onunload`. This includes events, timers, and page view duration.
 
